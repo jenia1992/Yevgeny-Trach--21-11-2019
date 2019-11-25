@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    
+}
+.isBlack{
+    background-color:#292b2c;
+    color: white;
+    
+    
+}
+
+nav{
+    li{
+        margin-right: 2rem;
+    }
+    
+}
+
+.AutoCompleteText{
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1),rgba(0,0,0,.18);
+    text-align: center;
+    
+    input{
+        width: 100%;
+        border: none;
+        padding: 0.3rem 1rem;
+        outline: none;
+        
+    }
+    ul{
+        list-style-type: none;
+        text-align: left;
+        margin: 0;
+        padding: 0 1rem;
+        border-top: 1px solid grey;
+        li{
+            line-height: 2rem;
+            &:hover{
+                text-decoration: underline;
+                background-color: rgba(128,128,128,0.20);
+            }
+        }
+        &::before{
+            content: "";
+        }
+    }
+
+    
+}
+.WeatherUI{
+    height: 70vh;
+    background-image: linear-gradient(to right bottom, #e9e7f026, #dedcee),url('./image/bgClouds.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    h1,h2,h3,p{
+        margin: 0;
+        padding: 0;
+    }
+    button:nth-child(2):hover{
+        color: red;
+        
+    }
+    
+    img[alt="currentWeatherIcon"]{
+        height: 75px;
+    }
+}
+.dailyBox{
+    height: 23vh;
+    transition: transform .5s ease;
+    background-color: #0000003a;
+    
+}
+.dailyBox>div:hover{
+    transform: scale(1.3);
+    
+}
